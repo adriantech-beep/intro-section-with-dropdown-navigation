@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Intro-Section-With-Dropdown-Navigation</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--for desktop viewport navigation -->
+      <nav class="desktop-nav">
+        <img src="images/logo.svg" alt="a logo image" />
+        <img
+          src="images/icon-menu.svg"
+          alt="an icon menu image"
+          class="desktop hamburger-btn"
+        />
+
+        <!--navigation links for desktop-->
+        <ul class="desktop-nav-links">
+          <li class="desktop__nav-item-1">
+            Features<img
+              src="images/icon-arrow-down.svg"
+              alt="an arrow image"
+            />
+          </li>
+          <li class="desktop__nav-item-2">
+            Company<img src="images/icon-arrow-down.svg" alt="an arrow image" />
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+
+        <!--this is for click event of features navigation-->
+        <div class="features-desktop_options hidden">
+          <div class="list first-option">
+            <img src="images/icon-todo.svg" alt="a todo image" />
+            <p>Todo List</p>
+          </div>
+          <div class="list second-option">
+            <img src="images/icon-calendar.svg" alt="a calendar image" />
+            <p>Calendar</p>
+          </div>
+          <div class="list third-option">
+            <img src="images/icon-reminders.svg" alt="a reminder image" />
+            <p>Reminders</p>
+          </div>
+          <div class="list fourth-option">
+            <img src="images/icon-planning.svg" alt="a planning image" />
+            <p>Planning</p>
+          </div>
+        </div>
+
+        <!--this is for click event of calendar navigation-->
+        <div class="calendar-desktop_options hidden">
+          <div class="modal-option__profile">
+            <p><a href="#">History</a></p>
+            <p><a href="#">Our Team</a></p>
+            <p><a href="#">Blog</a></p>
+          </div>
+        </div>
+        <div class="desktop-actions">
+          <a href="#">Log in</a>
+          <button class="register-btn">Register</button>
+        </div>
+      </nav>
+      <div class="container-inner">
+        <div class="hero-desktop">
+          <img src="images/image-hero-desktop.png" alt="a hero image" />
+        </div>
+        <div class="hero-mobile">
+          <img src="images/image-hero-mobile.png" alt="a hero image" />
+        </div>
+
+        <!--container for both main and footer-->
+        <div class="container_main-footer">
+          <main>
+            <h1>Make remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button>Learn more</button>
+          </main>
+          <footer>
+            <img
+              src="images/client-databiz.svg"
+              alt="a databiz image"
+              class="image-1"
+            />
+            <img
+              src="images/client-audiophile.svg"
+              alt="a audophile image"
+              class="image-2"
+            />
+            <img
+              src="images/client-meet.svg"
+              alt="a client meet image"
+              class="image-3"
+            />
+            <img
+              src="images/client-maker.svg"
+              alt="a client maker image"
+              class="image-4"
+            />
+          </footer>
+        </div>
+      </div>
+
+      <!--modal for mobile viewport onclick event-->
+      <div class="modal-mobile hidden">
+        <div class="mobile-nav-container">
+          <nav class="mobile-nav">
+            <img
+              src="images/icon-close-menu.svg"
+              alt="a close menu icon"
+              class="close-btn"
+            />
+            <div class="mobile-main-nav">
+              <ul>
+                <li class="mobile__nav-item-1">
+                  Features<img
+                    src="/images/icon-arrow-down.svg"
+                    alt="an arrow icon"
+                  />
+                </li>
+                <div class="features-options hidden">
+                  <div class="options">
+                    <img src="images/icon-todo.svg" alt="a todo image" />
+                    <a href="#">Todo List</a>
+                  </div>
+                  <div class="options">
+                    <img
+                      src="images/icon-calendar.svg"
+                      alt="a calendar image"
+                    />
+                    <a href="#">Calendar</a>
+                  </div>
+                  <div class="options">
+                    <img
+                      src="images/icon-reminders.svg"
+                      alt="a reminders image"
+                    />
+                    <a href="#">Reminders</a>
+                  </div>
+                  <div class="options">
+                    <img
+                      src="images/icon-planning.svg"
+                      alt="a planning image"
+                    />
+                    <a href="#">Planning</a>
+                  </div>
+                </div>
+                <li class="mobile__nav-item-2">
+                  Company<img
+                    src="/images/icon-arrow-down.svg"
+                    alt=""
+                    class="dropdown-image-2"
+                  />
+                </li>
+                <div class="company-options hidden">
+                  <ul>
+                    <li><a href="">History</a></li>
+                    <li><a href="">Our Team</a></li>
+                    <li><a href="">Blog</a></li>
+                  </ul>
+                </div>
+
+                <li>Careers</li>
+                <li>About</li>
+              </ul>
+            </div>
+            <div class="mobile operations">
+              <a href="">Log in</a>
+              <button class="register-btn">Register</button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
